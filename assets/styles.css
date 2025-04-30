@@ -1,0 +1,261 @@
+:root {
+    --bla: black;
+    --whts: whitesmoke;
+    --pur: rgb(85, 4, 85);
+    --red: red;
+}
+
+body {
+    background: var(--bla);
+    margin: 0px;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.chama-texto h2 {
+    color: var(--pur);
+    font-family: "Princess Sofia", cursive;
+    font-size: 130px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.carta {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* fundo semi-transparente */
+    padding: 30px 20px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.carta h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: var(--whts);
+}
+
+.carta p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--whts);
+    /* mantém a cor clara */
+    text-align: center;
+}
+
+.um,
+.dois {
+    animation: corPri 5s infinite;
+}
+
+.umm,
+.doiss {
+    animation: corSec 5s infinite;
+}
+
+@keyframes corPri {
+    50% {
+        color: purple;
+    }
+}
+
+@keyframes corSec {
+    0% {
+        color: purple;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: purple;
+    }
+}
+
+@keyframes mudarCor {
+    0% {
+        color: red;
+    }
+    20% {
+        color: blue;
+    }
+    40% {
+        color: green;
+    }
+    60% {
+        color: orange;
+    }
+    80% {
+        color: purple;
+    }
+    100% {
+        color: red;
+    }
+}
+
+
+.finalT {
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(245, 245, 245, 0.726);
+}
+
+.MARAVILHA {
+    animation: mudarCor 7s infinite;
+}
+
+.certeza,
+.dela {
+    color: red;
+
+}
+
+.viver,
+.lado {
+    color: green;
+
+}
+
+.prefS span {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    animation: ondaMetal 2s infinite;
+  }
+  
+  /* Atrasos progressivos para efeito de onda */
+  .prefS span:nth-child(1) { animation-delay: 0s; }
+  .prefS span:nth-child(2) { animation-delay: 0.1s; }
+  .prefS span:nth-child(3) { animation-delay: 0.2s; }
+  .prefS span:nth-child(4) { animation-delay: 0.3s; }
+  .prefS span:nth-child(5) { animation-delay: 0.4s; }
+  .prefS span:nth-child(6) { animation-delay: 0.5s; }
+  .prefS span:nth-child(7) { animation-delay: 0.6s; }
+  .prefS span:nth-child(8) { animation-delay: 0.7s; }
+  .prefS span:nth-child(9) { animation-delay: 0.8s; }
+  .prefS span:nth-child(10) { animation-delay: 0.9s; }
+  .prefS span:nth-child(11) { animation-delay: 1s; }
+  
+  @keyframes ondaMetal {
+    0%, 100% {
+      color: white;
+      text-shadow:
+        1px 1px 2px #6e00ff,
+        0 0 5px #b580ff,
+        0 0 10px #d9b3ff;
+      transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      color: #a86dff;
+      text-shadow:
+        2px 2px 4px #6e00ff,
+        0 0 8px #b580ff,
+        0 0 16px #ffffff;
+      transform: perspective(300px) rotateX(10deg) rotateY(10deg);
+    }
+  }
+  
+  
+
+.coracao img {
+    height: 450px;
+    margin-top: -50px;
+    margin-bottom: -25px;
+}
+
+.coracao {
+    text-align: center;
+}
+
+
+@keyframes blink-animation {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.bate-coracao {
+    animation: blink-animation 4s ease-in-out infinite;
+}
+
+#particulas-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.textoSofia {
+    color: var(--pur);
+    text-align: center;
+}
+
+.chama-presente h3:hover {
+    color: var(--amarelo);
+}
+
+#container img {
+    height: 300px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#container img {
+    opacity: 0.5;
+}
+
+#container img:hover {
+    opacity: 1;
+    border: solid 3px rgb(238, 148, 14);
+}
+
+.caixa-presente {
+    flex-basis: calc(27%);
+    text-align: center;
+    width: 100%;
+}
+
+/* Centraliza o presente roxo */
+.presenteRoxo {
+    text-align: center;
+
+}
+
+/* Ao passar o mouse, o presente brilha */
+.presente:hover {
+    filter: brightness(1.5);
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}

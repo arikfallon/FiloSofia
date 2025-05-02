@@ -52,6 +52,17 @@ p {
     text-align: center;
 }
 
+
+.de {
+    font-size: 30px;
+    margin-left: -520px;
+}
+
+.para {
+    font-size: 30px;
+    margin-left: -440px;
+}
+
 .um,
 .dois {
     animation: corPri 5s infinite;
@@ -86,23 +97,35 @@ p {
     0% {
         color: red;
     }
+
     20% {
         color: blue;
     }
+
     40% {
         color: green;
     }
+
     60% {
         color: orange;
     }
+
     80% {
         color: purple;
     }
+
     100% {
         color: red;
     }
 }
 
+.sete {
+    color: rgb(114, 110, 119);
+    font-size: 25px;
+}
+.setes {
+    color: var(--red);
+}
 
 .finalT {
     margin: 0px;
@@ -132,41 +155,44 @@ p {
     font-weight: bold;
     display: inline-block;
     animation: ondaMetal 2s infinite;
-  }
-  
-  /* Atrasos progressivos para efeito de onda */
-  .prefS span:nth-child(1) { animation-delay: 0s; }
-  .prefS span:nth-child(2) { animation-delay: 0.1s; }
-  .prefS span:nth-child(3) { animation-delay: 0.2s; }
-  .prefS span:nth-child(4) { animation-delay: 0.3s; }
-  .prefS span:nth-child(5) { animation-delay: 0.4s; }
-  .prefS span:nth-child(6) { animation-delay: 0.5s; }
-  .prefS span:nth-child(7) { animation-delay: 0.6s; }
-  .prefS span:nth-child(8) { animation-delay: 0.7s; }
-  .prefS span:nth-child(9) { animation-delay: 0.8s; }
-  .prefS span:nth-child(10) { animation-delay: 0.9s; }
-  .prefS span:nth-child(11) { animation-delay: 1s; }
-  
-  @keyframes ondaMetal {
-    0%, 100% {
-      color: white;
-      text-shadow:
-        1px 1px 2px #6e00ff,
-        0 0 5px #b580ff,
-        0 0 10px #d9b3ff;
-      transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+}
+
+/* Atrasos progressivos para efeito de onda */
+.prefS span:nth-child(1) { animation-delay: 0s; }
+.prefS span:nth-child(2) { animation-delay: 0.1s; }
+.prefS span:nth-child(3) { animation-delay: 0.2s; }
+.prefS span:nth-child(4) { animation-delay: 0.3s; }
+.prefS span:nth-child(5) { animation-delay: 0.4s; }
+.prefS span:nth-child(6) { animation-delay: 0.5s; }
+.prefS span:nth-child(7) { animation-delay: 0.6s; }
+.prefS span:nth-child(8) { animation-delay: 0.7s; }
+.prefS span:nth-child(9) { animation-delay: 0.8s; }
+.prefS span:nth-child(10) { animation-delay: 0.9s; }
+.prefS span:nth-child(11) { animation-delay: 1s; }
+
+@keyframes ondaMetal {
+
+    0%,
+    100% {
+        color: white;
+        text-shadow:
+            1px 1px 2px #6e00ff,
+            0 0 5px #b580ff,
+            0 0 10px #d9b3ff;
+        transform: perspective(300px) rotateX(0deg) rotateY(0deg);
     }
+
     50% {
-      color: #a86dff;
-      text-shadow:
-        2px 2px 4px #6e00ff,
-        0 0 8px #b580ff,
-        0 0 16px #ffffff;
-      transform: perspective(300px) rotateX(10deg) rotateY(10deg);
+        color: #a86dff;
+        text-shadow:
+            2px 2px 4px #6e00ff,
+            0 0 8px #b580ff,
+            0 0 16px #ffffff;
+        transform: perspective(300px) rotateX(10deg) rotateY(10deg);
     }
-  }
-  
-  
+}
+
+
 
 .coracao img {
     height: 450px;
